@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@1,400;1,700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="upper-box">
+    <header>
+       
+        <div><img src="/media/navbar-logo.svg"  /></div>
+        
+            <nav class="nav-div" id="myTopnav">
+                
+                <a href="#services">SERVICES</a>
+                <a href="#portfolio">PORTFOLIO</a>
+                <a href="#about">ABOUT</a>
+                <a href="#team">TEAM</a>
+                <a href="#contact">CONTACT</a>
+                <a href="#javascript:void(0);" class="icon" onclick="myFunction()"><img src="./media/hamburger.png" width="25px"/></a>
+            
+            </nav>
+        
+    </header>
+    <div class="welcome">
+        <h2>Welcome to Our Studio!</h2>
+        <h1> IT'S NICE TO MEET YOU</h1>
+        <button>TELL ME MORE</button>
+    </div>
+</div>
+    <div id="services">
+        <div>E-Commerce</div>
+        <div>Responsive Design</div>
+        <div>Web Security</div>
+
+    </div>
+    <script>  function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "nav-div") {
+          x.className += " responsive";
+        } else {
+          x.className = "nav-div";
+        }
+      }   </script>
+</body>
+</html>

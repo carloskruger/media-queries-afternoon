@@ -1,0 +1,92 @@
+header {
+	display: flex;
+	justify-content: space-between;
+	color: white;
+}
+
+h1 {
+	font-size: 60px;
+}
+
+h2 {
+	font-size: 40px;
+	font-family: "IBM Plex Serif", serif;
+}
+
+header div img {
+	width: 200px;
+}
+
+.nav-div a {
+	font-family: "Montserrat", sans-serif;
+	display: flex;
+	list-style-type: none;
+	justify-content: space-between;
+}
+
+.nav-div a {
+	text-decoration: none;
+	font-size: 17px;
+	float: left;
+	padding: 10px;
+	color: white;
+}
+
+.nav-div a:hover {
+	color: #e1ad01;
+}
+
+.nav-div .icon {
+	display: none;
+}
+
+.upper-box {
+	font-family: "Montserrat", sans-serif;
+	height: 80vh;
+	color: white;
+	background-image: url("https://media.discordapp.net/attachments/760894093651476551/771090429046292530/header-bg.jpg?width=1322&height=870");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+button {
+	background-color: #e1ad01;
+	color: white;
+	height: 80px;
+	width: 220px;
+	font-size: 20px;
+}
+
+.welcome {
+	margin-top: 100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+	.nav-div a {
+		display: none;
+	}
+	.nav-div a.icon {
+		float: right;
+		display: block;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.nav-div.responsive {
+		position: relative;
+	}
+	.nav-div.responsive a.icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	.nav-div.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+}
