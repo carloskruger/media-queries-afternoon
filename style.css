@@ -6,9 +6,23 @@ header {
 
 h1 {
 	font-size: 60px;
+	font-family: "Montserrat", sans-serif;
+	text-align: center;
 }
 
 h2 {
+	font-family: "Montserrat", sans-serif;
+	font-size: 35px;
+	text-align: center;
+}
+
+h3 {
+	font-family: "Montserrat", sans-serif;
+	font-size: 30px;
+	text-align: center;
+}
+
+.welcome h2 {
 	font-size: 40px;
 	font-family: "IBM Plex Serif", serif;
 }
@@ -65,6 +79,37 @@ button {
 	align-items: center;
 }
 
+.text-under-title {
+	font-family: "IBM Plex Serif", serif;
+	margin: auto;
+}
+
+span {
+	text-align: center;
+}
+
+#services {
+	display: flex;
+	font-family: "Montserrat", sans-serif;
+
+	justify-content: space-between;
+}
+
+#services h2 {
+	font-size: 40px;
+	font-family: "Montserrat", sans-serif;
+}
+
+.first-row {
+	display: flex;
+	justify-content: space-between;
+}
+
+.second-row {
+	display: flex;
+	justify-content: space-between;
+}
+
 @media screen and (max-width: 600px) {
 	.nav-div a {
 		display: none;
@@ -72,6 +117,21 @@ button {
 	.nav-div a.icon {
 		float: right;
 		display: block;
+	}
+
+	#services h2 {
+		font-size: 25px;
+	}
+	#services {
+		flex-direction: column;
+	}
+
+	.first-row {
+		flex-direction: column;
+	}
+
+	.second-row {
+		flex-direction: column;
 	}
 }
 
